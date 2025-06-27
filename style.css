@@ -1,0 +1,207 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Ensures padding and borders don't cause overflow */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%; /* Ensure container does not overflow */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.jumbotron {
+    height: 575px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+footer {
+    background-color: #004E98;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer.text-center {
+    background-color: #001F33;
+    color: white;
+    padding: 10px;
+}
+
+.card {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 30px;
+    margin: 15px;
+    overflow: hidden;
+    background-color: #C5DDF3;
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Spacing for brand image */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px; /* Space between nav items */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* Ensure white links */
+}
+
+/* Align the profile dropdown to the right */
+.navbar-nav .dropdown-menu {
+    width: 250px; /* Fixed width */
+    min-width: 250px; /* Ensure minimum width */
+    max-height: 400px; /* Set max-height if the dropdown has many items */
+    overflow-y: auto; /* Enable scrolling if too many items */
+    position: absolute; /* Ensure it positions itself correctly */
+    top: 100%; /* Align it below the dropdown toggle */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust position so it aligns perfectly */
+    z-index: 1050; /* Ensure it's above other content */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Add a shadow for better visibility */
+}
+
+/* Ensure dropdown aligns to the right edge of the parent */
+.navbar-nav .dropdown-menu-end {
+    left: auto;
+    right: 0; /* Align the dropdown to the right edge of the parent */
+}
+
+/* Optional: Adjust padding for the dropdown items */
+.navbar-nav .dropdown-item {
+    padding: 10px 15px;
+}
+
+/* Optional: Adjust the hover effect */
+.navbar-nav .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Optional: Adjust the size of the dropdown toggle icon */
+.navbar-nav .dropdown-toggle {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .fa-envelope {
+    font-size: 18px; /* Size for envelope icon */
+}
+
+.btn-warning:hover {
+    background-color: #FFC107;
+    color: black;
+}
+
+@media (max-width: 576px) {
+    .carousel-item {
+        background-size: cover;
+        height: 350px;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.modal-content {
+    max-width: 100%;
+    margin: 0;
+}
+
+
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Spacing for brand image */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px; /* Space between nav items */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* Ensure white links */
+}
+
+/* Align the profile dropdown to the right */
+.navbar-nav .dropdown-menu {
+    width: 250px; /* Fixed width */
+    min-width: 250px; /* Ensure minimum width */
+    max-height: 400px; /* Set max-height if the dropdown has many items */
+    overflow-y: auto; /* Enable scrolling if too many items */
+    position: absolute; /* Ensure it positions itself correctly */
+    top: 100%; /* Align it below the dropdown toggle */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust position so it aligns perfectly */
+    z-index: 1050; /* Ensure it's above other content */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Add a shadow for better visibility */
+}
+
+/* Ensure dropdown aligns to the right edge of the parent */
+.navbar-nav .dropdown-menu-end {
+    left: auto;
+    right: 0; /* Align the dropdown to the right edge of the parent */
+}
+
+/* Optional: Adjust padding for the dropdown items */
+.navbar-nav .dropdown-item {
+    padding: 10px 15px;
+}
+
+/* Optional: Adjust the hover effect */
+.navbar-nav .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Optional: Adjust the size of the dropdown toggle icon */
+.navbar-nav .dropdown-toggle {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .fa-envelope {
+    font-size: 18px; /* Size for envelope icon */
+}
+
+@media (max-width: 576px) {
+    .carousel-item {
+        background-size: cover;
+        height: 350px;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
